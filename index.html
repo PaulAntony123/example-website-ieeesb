@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IEEE EXECOM 2026 — Player Card</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <style>
-        *, *::before, *::after {
+        *,
+        *::before,
+        *::after {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -53,21 +58,24 @@
         .poster {
             position: relative;
             z-index: 1;
-            width: 440px;
-            height: 720px;
+            width: 540px;
+            height: 725px;
             background: var(--bg-card);
             border-radius: 16px;
             overflow: hidden;
             box-shadow:
                 0 30px 80px rgba(0, 0, 0, 0.7),
-                0 0 0 1px rgba(255,255,255,0.04);
+                0 0 0 1px rgba(255, 255, 255, 0.04);
             animation: posterEntry 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
             transform: translateY(30px) scale(0.97);
             opacity: 0;
         }
 
         @keyframes posterEntry {
-            to { transform: translateY(0) scale(1); opacity: 1; }
+            to {
+                transform: translateY(0) scale(1);
+                opacity: 1;
+            }
         }
 
         /* ── Diagonal speed lines (SVG-generated) ── */
@@ -89,7 +97,9 @@
         }
 
         @keyframes speedLineIn {
-            to { opacity: 1; }
+            to {
+                opacity: 1;
+            }
         }
 
         /* ── Geometric decorations ── */
@@ -147,8 +157,15 @@
         }
 
         @keyframes floatSlow {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
         }
 
         /* ── Halftone dots pattern ── */
@@ -266,7 +283,7 @@
         .main-area {
             position: relative;
             z-index: 3;
-            height: 310px;
+            height: 330px;
             margin: 10px 0;
             overflow: visible;
         }
@@ -276,8 +293,8 @@
             position: absolute;
             right: -20px;
             top: -20px;
-            width: 300px;
-            height: 360px;
+            width: 340px;
+            height: 380px;
             z-index: 4;
             overflow: hidden;
         }
@@ -293,7 +310,7 @@
         .player-photo .photo-overlay {
             position: absolute;
             inset: 0;
-            background: linear-gradient(180deg, transparent 30%, rgba(17,17,21,0.5) 70%, rgba(17,17,21,0.95) 100%);
+            background: linear-gradient(180deg, transparent 30%, rgba(17, 17, 21, 0.5) 70%, rgba(17, 17, 21, 0.95) 100%);
             pointer-events: none;
         }
 
@@ -423,7 +440,7 @@
         .stat-pill:hover {
             border-color: rgba(168, 224, 99, 0.25);
             transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
 
         .stat-pill .val {
@@ -528,13 +545,11 @@
             inset: 0;
             z-index: 8;
             pointer-events: none;
-            background: repeating-linear-gradient(
-                0deg,
-                transparent,
-                transparent 2px,
-                rgba(0, 0, 0, 0.04) 2px,
-                rgba(0, 0, 0, 0.04) 4px
-            );
+            background: repeating-linear-gradient(0deg,
+                    transparent,
+                    transparent 2px,
+                    rgba(0, 0, 0, 0.04) 2px,
+                    rgba(0, 0, 0, 0.04) 4px);
         }
 
         /* ── Subtle noise texture ── */
@@ -552,7 +567,7 @@
         @media (max-width: 480px) {
             .poster {
                 width: 360px;
-                height: 620px;
+                height: 483px;
             }
 
             .big-number.primary {
@@ -564,12 +579,13 @@
             }
 
             .player-photo {
-                width: 240px;
-                height: 300px;
+                width: 260px;
+                height: 320px;
             }
         }
     </style>
 </head>
+
 <body>
 
     <div class="poster">
@@ -619,19 +635,19 @@
             <div class="big-numbers">
                 <span class="big-number primary" data-text="26">26</span>
                 <h1 class="player-name-big">
-                    GLADYS
-                    <span class="accent-text">MANUEL</span>
+                    MALAVIKA
+                    <span class="accent-text">K.J</span>
                 </h1>
                 <p class="player-role">Chairperson · EXECOM</p>
             </div>
 
-            <!-- Player photo (right side) -->
+            <!-- Player photo (right side)-->
             <div class="player-photo">
-                <img src="GladysManuel.png" alt="Gladys Manuel">
+                <img src="malavika k.j.png" alt="Malavika K.J">
                 <div class="photo-overlay"></div>
                 <div class="photo-text">
                     <p class="tag-label">TAG/</p>
-                    <p class="tag-value">GLADYS</p>
+                    <p class="tag-value">MALAVIKA</p>
                     <p class="tag-label" style="margin-top:8px">TEAM/</p>
                     <p class="tag-value">VISAT IEEE SB</p>
                 </div>
@@ -729,4 +745,5 @@
         });
     </script>
 </body>
+
 </html>
